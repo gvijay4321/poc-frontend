@@ -12,7 +12,7 @@ function App() {
         setLoading(false);
       })
       .catch((error) => {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data from api:", error);
         setLoading(false);
       });
   }, []);
@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <h1>Frontend React App</h1>
-      {loading ? <p>Loading...</p> : <p>{data?.message}</p>}
+      {loading ? <p>Loading Data...</p> : <p>{data?.message}</p>}
     </div>
   );
 }
