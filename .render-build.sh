@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Install dependencies and run the build
+echo "Installing dependencies..."
 npm install
+echo "Running build..."
 npm run build
